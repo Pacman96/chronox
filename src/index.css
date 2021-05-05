@@ -5,9 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: #ededed; */
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+body.euiBody--headerIsFixed {
+  padding-top: 49px;
+}
+ 
+.content {
+  padding: 20px;
+  min-height: 80vh;
 }

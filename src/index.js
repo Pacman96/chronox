@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import './index.css';
+import './services/firedb';
+
+import '@elastic/eui/dist/eui_theme_light.css';
+
+import Router from './services/router';
+import { RootWrapper } from './services/rootWrapper';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RootWrapper>
+      <Router />
+    </RootWrapper>
   </React.StrictMode>,
   document.getElementById('root')
 );
